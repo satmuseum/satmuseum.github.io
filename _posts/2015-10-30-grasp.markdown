@@ -1,0 +1,19 @@
+---
+layout: post
+title:  "First solver in the Museum: GRASP"
+categories: cdcl 
+---
+
+Joao Marques Silva provided to the museum the source code of the original GRASP back in 1996.
+
+It is available in [a specific git repository](https://github.com/satmuseum/grasp).
+
+GRASP is important in the history of SAT because it is considered as the root of the Conflict Driven Clause Learning architecture: the authors of GRASP [received the 2009 CAV Award](http://logos.ucd.ie/~jpms/docs/cav-award-fmsd10.pdf) to recognise that major contribution to the current efficiency of SAT solvers.
+
+The solver was presented in the papers:
+
++ João P. Marques Silva, Karem A. Sakallah: [GRASP: A Search Algorithm for Propositional Satisfiability](http://eprints.soton.ac.uk/262032/1/jpms-tcomp99.pdf). IEEE Trans. Computers 48(5): 506-521 (1999)
++ João P. Marques Silva, Karem A. Sakallah: GRASP - a new search algorithm for satisfiability. ICCAD 1996: 220-227
++ João P. Marques Silva, Karem A. Sakallah: [Conflict Analysis in Search Algorithms for Satisfiability](http://eprints.soton.ac.uk/265008/1/jpms%2Dictai96.pdf). ICTAI 1996: 467-469
+
+Joao Marques Silva developed the main ideas behind GRASP during his PhD titled [Search Algorithms for Satisfiability Problems in Combinational Switching Circuits](http://eprints.soton.ac.uk/265010/1/jpms-phd95.pdf), defended at the University of Michigan, Electrical Engineering and Computer Science department in 1995.
