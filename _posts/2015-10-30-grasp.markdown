@@ -17,3 +17,7 @@ The solver was presented in the papers:
 + João P. Marques Silva, Karem A. Sakallah: [Conflict Analysis in Search Algorithms for Satisfiability](http://eprints.soton.ac.uk/265008/1/jpms%2Dictai96.pdf). ICTAI 1996: 467-469
 
 Joao Marques Silva developed the main ideas behind GRASP during his PhD titled [Search Algorithms for Satisfiability Problems in Combinational Switching Circuits](http://eprints.soton.ac.uk/265010/1/jpms-phd95.pdf), defended at the University of Michigan, Electrical Engineering and Computer Science department in 1995.
+
+The solver is coded in C++ with a neat object oriented design. The main function `solve`, abstracted in all CDCL presentations, can be [found in the GRASP_SAT class](https://github.com/satmuseum/grasp/blob/master/src/libs/grasp/grp_SAT.cc#L153). Such class delegates to three different classes, [BRE](https://github.com/satmuseum/grasp/blob/master/src/libs/grasp/grp_BRE.hh) for Backward Reasoning Engine, [DecisionEngine](https://github.com/satmuseum/grasp/blob/master/src/libs/grasp/grp_Decide.hh) for the decision heuristics and [FRE](https://github.com/satmuseum/grasp/blob/master/src/libs/grasp/grp_FRE.hh) for Forward Reasoning Engine (aka Boolean Constraint Propagation).
+
+![Grasp architecture](/grasp.png)

@@ -1,0 +1,27 @@
+@startuml
+hide empty members
+left to right direction
+
+package libs {
+class GRASP_SAT
+class FRE
+class BRE 
+class DecisionEngine 
+class DeductionEngine 
+class DiagnosisEngine 
+
+DeductionEngine ..> FRE 
+DiagnosisEngine ..> BRE
+
+GRASP_SAT o--> DecisionEngine 
+GRASP_SAT o--> DeductionEngine
+GRASP_SAT o--> DiagnosisEngine
+
+}
+
+package apps {
+class NSAT
+
+NSAT ..> GRASP_SAT
+}
+@enduml
